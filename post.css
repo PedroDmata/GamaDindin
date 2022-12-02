@@ -1,0 +1,429 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  height: 85px;
+  background-color: #2E948A;
+  display: flex;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+header nav a {
+  color: #FFF;
+  padding: 0px 15px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1500px;
+  margin:  0 auto;
+  width: 100%;
+}
+
+#logohead {
+  margin-left: 30px;
+  
+}
+
+#opcoes {
+  display: flex;
+  justify-items: flex-end;
+  margin-right: 30px;
+}
+
+
+
+@media (max-width: 1000px) {
+  header {
+    height: 50px;
+  }
+
+  #logohead {
+    margin-left: 10px;
+  }
+
+  #imghead {
+    width: 80px;
+  }
+
+  #opcoes {
+    margin-right: 10px;
+  }
+
+  header nav a {
+    padding: 0px 5px;
+    font-size: 12px;
+  }
+}
+
+section {
+    max-width: 1500px;
+    margin: 100px auto;
+}
+
+#introducao {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: #FF4081;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+h2{
+    color: #FF4081;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    width: 344;
+}
+
+h3 {
+    color: #009688;
+    font-size: 30px;
+    margin: 30px auto;
+}
+
+h5 {
+    display: flex;
+    justify-content: center;
+    margin: -30px auto;
+    color: #9D9D9D;   
+}
+
+p {
+    margin: 25px 0px 100px 0px;
+}
+
+
+#introducao {
+    display: block;
+    background-color: #C4C4C4;
+    height: 600px;
+}
+
+/*RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+    #introducao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% - 20px);
+        height: 350px;
+        margin: 50px 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    p {
+        margin: 15px 10px;
+        font-size: 12px;
+    }
+
+    h3 {
+        margin: 20px 10px;
+        line-height: 130%;
+        font-size: 25px;
+    }
+}
+
+article {
+    max-width: 1500px;
+    margin: 0 auto;
+    text-align: justify;
+    line-height: 150%;
+}
+
+.cursos {
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.comecarnow {
+    background-color: #FF4081;
+    padding: 10px 30px;
+    border-radius: 30pc;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+    .cursos {
+        font-size: 13px;
+        margin-top: -50px;
+        overflow-x: scroll;
+        display: flex;
+        align-items: flex-end;
+        padding: 15px 10px;
+    }
+
+    #cursos{
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    #independencia {
+        width: 400px;
+    }
+
+    .cursos::-webkit-scrollbar {
+        background-color: #FFF;
+        height: 10px;
+    }
+
+    .cursos::-webkit-scrollbar-thumb {
+        background-color: #009688;
+        border-radius: 20px;
+    }
+}
+
+
+
+footer {
+    background-color: #419488;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  #logofooter {
+    margin-left: 30px;
+  }
+  
+  #footer1 {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #maisopcoes {
+    margin-right: 30px;
+  }
+  
+  #footerop {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+  }
+  
+  .footerop {
+    padding: 5px 0px;
+    cursor: pointer;
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  #maisop {
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+  }
+  
+  .maisop {
+    padding: 5px 25px;
+    border-radius: 25px;
+    border: #FFF solid 1px;
+    cursor: pointer;
+  }
+  
+  /* RESPONSIVIDADE */
+  
+  @media (max-width: 1000px) {
+    footer {
+      height: 110px;
+    }
+  
+    footer img {
+      width: 120px;
+    }
+  
+    #logofooter {
+      margin-left: 10px;
+    }
+  
+    #img_footer {
+      width: 80px;
+    }
+  
+    .footerop,
+    .maisop {
+      font-size: 12px;
+    }
+  
+    #footeroutro {
+      margin-right: 10px;
+      text-align: center;
+    }
+  
+    .maisop {
+      padding: 2px;
+      width: 100px;
+    }
+  }
